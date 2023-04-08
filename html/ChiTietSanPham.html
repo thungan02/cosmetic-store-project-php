@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/mypham/Banner/logo_removebg.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/TrangChu.css">
+    <link rel="stylesheet" href="../css/mdb.css">
+    <link rel="stylesheet" href="../css/ChiTietSanPham.css">
+    <link rel="stylesheet" href="../css/Product-Grid.css">
+    <title>Chi tiết sản phẩm</title>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/ListProduct.js"></script>
+    <script src="../js/Product-LoadData.js"></script>
+    <script src="../js/TrangChu.js"></script>
+    <script src="../js/ChiTietSanPham.js"></script>
+    <style>
+        /* .has-search .form-control {
+            padding-left: 2.375rem;
+        }
+
+        .has-search .form-control-feedback {
+            position: absolute;
+            z-index: 2;
+            display: block;
+            width: 2.375rem;
+            height: 2.375rem;
+            line-height: 2.375rem;
+            text-align: center;
+            color: #aaa;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <body>
+
+        <div class="container-fluid px-0">
+            <div class="image-container">
+                <marquee direction="right"><br>
+                    <img src="../img/mypham/xeununun.jpg" alt="">
+                    <img src="../img/mypham/xeununun.jpg" alt="">
+                    <img src="../img/mypham/xeununun.jpg" alt="">
+                    <img src="../img/mypham/xeununun.jpg" alt="">
+                    <img src="../img/mypham/xeununun.jpg" alt="">
+                    <img src="../img/mypham/xeununun.jpg" alt="">
+                    <img src="../img/mypham/xeununun.jpg" alt="">
+                    <img src="../img/mypham/xeununun.jpg" alt="">
+                    <img src="../img/mypham/xeununun.jpg" alt="">
+                    <img src="../img/mypham/xeununun.jpg" alt="">
+                    <img src="../img/mypham/xeununun.jpg" alt="">
+                    <img src="../img/mypham/xeununun.jpg" alt="">
+                    <img src="../img/mypham/xeununun.jpg" alt="">
+                    <img src="../img/mypham/xeununun.jpg" alt="">
+                    <img src="../img/mypham/xeununun.jpg" alt="">
+                </marquee>
+                <marquee class="text-uppercase font-weight-bold">Giảm ngay 10% cho lần đầu mua hàng</marquee>
+            </div>
+        </div>
+
+        <style>
+            marquee {
+                color: red;
+            }
+
+            .image-container {
+                text-align: center;
+            }
+
+            .image-container img {
+                width: 75px;
+                margin: 0 10px;
+            }
+
+            .search {
+
+                align-items: center;
+            }
+
+            .search input[type="search"] {
+                height: 100%;
+                padding: 10px;
+            }
+
+            img {
+                height: 100%;
+                padding: 10px;
+            }
+
+            .navbar .nav-item .nav-link {
+                color: black;
+            }
+
+            a:hover {
+                color: #5C3808;
+            }
+        </style>
+
+
+        <form action="" class="search d-flex" method="post">
+            <a href="../html/TrangChu.html"><img width="200px" src="../img/mypham/Banner/Logo.png" alt=""></a>
+
+            <div class="search-container d-flex">
+                <input type="search" style="border-radius: 50px; width: 500px;" id="search" placeholder="Tìm kiếm">
+                <span class="icon"><i class="fa fa-search"></i></span>
+            </div>
+
+            <div class="ml-auto d-flex align-items-center">
+                <div class="mr-3">
+                    <i class="fas fa-user-circle fa-2x navbar-link"></i>
+                    <a href="" class="text-decoration-none navbar-link" id="btnDangNhap" data-toggle="modal">Đăng
+                        nhập</a>
+                </div>
+
+                <div class="m2-auto">
+                    <i class="fas fa-cart-shopping fa-2x navbar-link"></i>
+                    <a href="../html/GioHang.html" class="text-decoration-none navbar-link">Giỏ hàng</a>
+                </div>
+            </div>
+        </form>
+
+        <style>
+            .search-container {
+                margin-right: 20px;
+            }
+
+            .ml-auto {
+                margin-right: 300px;
+            }
+
+            .m2-auto {
+                margin-right: 20px;
+            }
+
+            .text-decoration-none {
+                color: black;
+            }
+
+            #menu:hover {
+                color: #5C3808;
+            }
+        </style>
+
+        <header class="row" style="background-color: #F8F3EF;">
+            <div class="col-md-12 d-flex justify-content-center">
+                <nav class="navbar navbar-expand col-md-8" style="color: black;">
+                    <ul class="navbar-nav m-auto" id="menu">
+                        <li class="nav-item dropdown pf-5 pr-5 align-items-center font-weight-bold">
+                            <a id="menu" href="" class="nav-link navbar-link dropdown-toggle"
+                                data-toggle="dropdown">DANH MỤC SẢN PHẨM</a>
+                            <div class="dropdown-menu">
+                                <a href="../html/SanPham.html" class="dropdown-item pt-1 pb-0">Mặt hàng a</a>
+                                <a href="../html/SanPham.html" class="dropdown-item pt-1 pb-0">Mặt hàng b</a>
+                                <a href="../html/SanPham.html" class="dropdown-item pt-1 pb-0">Mặt hàng c</a>
+                                <a href="../html/SanPham.html" class="dropdown-item pt-1 pb-0">Mặt hàng d</a>
+                                <a href="../html/SanPham.html" class="dropdown-item pt-1 pb-0">Mặt hàng e</a>
+                                <a href="../html/SanPham.html" class="dropdown-item pt-1 pb-0">Mặt hàng f</a>
+                                <a href="../html/SanPham.html" class="dropdown-item pt-1 pb-0">Mặt hàng g</a>
+                                <a href="../html/SanPham.html" class="dropdown-item pt-1 pb-0">Mặt hàng h</a>
+                            </div>
+                        </li>
+                        <li class="nav-item pf-5 pr-5 align-items-center font-weight-bold"><a id="menu"
+                                href="../html/TrangChu.html" class="nav-link navbar-link">  GIỚI THIỆU</a></li>
+                        <li class="nav-item pf-5 pr-5 align-items-center font-weight-bold"><a id="menu"
+                                href="../html/camnang.html" class="nav-link navbar-link">CẨM NANG LÀM ĐẸP</a></li>
+                        <li class="nav-item pf-5 pr-5 align-items-center font-weight-bold"><a id="menu"
+                                href="../html/hotro.html" class="nav-link navbar-link">HỖ TRỢ KHÁCH HÀNG</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div id="lotus" class="picture">
+                                                <img width="525px" class="img-fluid" src="../img/mypham/Banner/1.png"
+                                                    alt="Hình ảnh không khả dụng">
+                                            </div>
+                                            <div id="boat" class="picture" style="display:none">
+                                                <img width="525px" class="img-fluid" src="../img/mypham/Banner/2.png"
+                                                    alt="Hình ảnh không khả dụng">
+                                            </div>
+                                            <div id="leaves" class="picture" style="display:none">
+                                                <img width="525px" class="img-fluid" src="../img/mypham/Banner/3.png"
+                                                    alt="Hình ảnh không khả dụng">
+                                            </div>
+                                            <div id="rocks" class="picture" style="display:none">
+                                                <img width="525px" class="img-fluid" src="../img/mypham/Banner/4.png"
+                                                    alt="Hình ảnh không khả dụng">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col">
+                                            <a href="javascript:void(0)" class="myhover" onclick="openImg('lotus');">
+                                                <img class="img-fluid" src="../img/mypham/Banner/1.png"
+                                                    alt="Hình ảnh không khả dụng">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="javascript:void(0)" class="myhover" onclick="openImg('boat');">
+                                                <img class="img-fluid" src="../img/mypham/Banner/2.png"
+                                                    alt="Hình ảnh không khả dụng">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="javascript:void(0)" class="myhover" onclick="openImg('leaves');">
+                                                <img class="img-fluid" src="../img/mypham/Banner/3.png"
+                                                    alt="Hình ảnh không khả dụng">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="javascript:void(0)" class="myhover" onclick="openImg('rocks');">
+                                                <img class="img-fluid" src="../img/mypham/Banner/4.png"
+                                                    alt="Hình ảnh không khả dụng">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>Son MAC Mịn Lì 602 Chili - Đỏ Gạch 3g</h4>
+                                    <div>
+                                        <ul class="list-unstyled list-inline">
+                                            <li class="list-inline-item"><span class="fa fa-star checked"></span></li>
+                                            <li class="list-inline-item"><span class="fa fa-star checked"></span></li>
+                                            <li class="list-inline-item"><span class="fa fa-star checked"></span></li>
+                                            <li class="list-inline-item"><span class="fa fa-star checked"></span></li>
+                                            <li class="list-inline-item"><span class="fa fa-star"></span></li>
+                                        </ul>
+                                    </div>
+                                    <p id="tinhtrang">
+                                        <span>Tình trạng: </span>
+                                        <span class="text-success">Còn hàng</span>
+                                    </p>
+                                    <ul class="text-muted">
+                                        <p>Son Lì Mịn Môi Siêu Nhẹ Maybelline Color Sensational Ultimatte là dòng son lì cao cấp mới nhất 
+                                            từ thương hiệu Maybelline New York, cho bạn 3 tính năng vượt trội "Mịn - Mờ - Nhẹ tênh". Với 
+                                            công nghệ làm mờ rãnh môi mang đến lớp finish mịn mờ sang trọng kết hợp công nghệ ultrafine 
+                                            powder cho son mịn lì nhẹ tênh. Thiết kế đầu son hình giọt sương nhỏ giúp son dễ dàng lướt nhẹ 
+                                            và chuẩn màu trên môi bạn. Đặc biệt, vỏ son “mảnh mai thon gọn” cùng màu sắc bắt mắt, khơi 
+                                            gợi hơi thở sang trọng, thời thượng và trẻ trung.</p>
+                                    </ul>
+                                    <div>
+                                        <span class="text-danger " style="font-size: 30px;">550.000₫</span>
+                                        <span class="pl-3"
+                                            style="font-size: 18px; text-decoration: line-through;">650.000₫</span>
+                                    </div>
+                                    <button type="button" class="btn btn-primary" style="font-size: large;">Thêm vào giỏ
+                                        hàng</button>
+                                </div>
+                            </div>
+                            <div class="row pt-md-5">
+                                <div class="col-md-6 pt-3">
+                                    <h4 class="text-uppercase">Thành phần sản phẩm</h4>
+                                    <ul>
+                                        <li><i>Maybelline Color Sensational Ultimatte</i> sở hữu chất son mềm, mượt, mịn, không để lộ vân môi.</li>
+                                        <li>Công nghệ làm mờ rãnh môi cho hiệu ứng mịn lì - mờ ảo - nhẹ tênh.</li>
+                                        <li>Chứa tinh dầu Jojoba giúp dưỡng ẩm cho môi thêm mềm mịn, hạn chế tình trạng khô nứt môi.</li>
+                                        <li>Khả năng lên màu chuẩn chỉ sau 1 lần lướt cùng độ bền màu cao, giữ sắc môi luôn tươi tắn suốt nhiều giờ liền</li>
+                                        <li>Đầu son hình giọt sương lướt êm trên môi.</li>
+                                        <li>Bảng màu son với 7 tone thời thượng, tôn da ngay tức thì mà không cần trang điểm cầu kỳ chuyên nghiệp.</li>
+                                    </ul>
+                                    <p><b><i></i></b> <br>
+                                        <br>
+                                        <br>
+                                        <b><i></i></b> <br>
+                                        <br>
+
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div>
+                                        <table class="table">
+                                            <caption style="caption-side: top;">
+                                                <h4 class="text-uppercase">Thông tin sản phẩm</h4>
+                                                <caption>
+                                                <tbody>
+                                            <tr>
+                                                <td>Thương hiệu</td>
+                                                <td>MAYBELLINE</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Xuất sứ </td>
+                                                <td>Mỹ</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Loại da</td>
+                                                <td>Nam & nữ</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Đặc tính</td>
+                                                <td>Dạng lì</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <h4>HƯỚNG DẪN SỬ DỤNG</h4>
+                                        <ul>
+                                            <li>Bạn có thể pha màu son để tạo nên sắc son ombre chuyển màu cực kỳ ấn tượng 
+                                                (ví dụ: kết hợp màu More taupe 799 làm lớp nền môi & màu More magenta 399 
+                                                ở lòng môi để tạo ra tone hồng đất cực kỳ tôn da và thu hút).</li>
+                                            <li>Hoặc sử dụng kết hợp với che khuyết điểm Maybelline Fitme ở viền môi 
+                                                & son ultimate ở lòng môi để tạo hiệu ứng đôi môi chúm chím kiêu kỳ hơn.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <footer class="row" style="background-color: #F8F3EF; color: #5C3808;">
+            <div class="col-md-12 d-flex justify-content-center">
+                <section class="row text-center border-bottom mt-4">
+                    <div class="col">
+                        <h6 class="text-uppercase"><i class="fa fa-gem"></i>CALISTYA BEAUTY THIÊN ĐƯỜNG MỸ PHẨM CHÍNH
+                            HÃNG</h6>
+                        <p>CALISTYA BEAUTY
+                            THIÊN ĐƯỜNG MỸ PHẨM
+                            CHÍNH HÃNG <br>
+                            Hotline: 1800 6324
+                            (miễn phí , 08-22h kể cả T7, CN) <br>
+                            Các câu hỏi thường gặp <br>
+                            Gửi yêu cầu hỗ trợ <br>
+                            Hướng dẫn đặt hàng <br>
+                            Phương thức vận chuyển <br>
+                            Chính sách đổi trả
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h6 class="text-uppercase">CHĂM SÓC KHÁCH HÀNG</h6>
+                        <div class="row">
+                            <div class="col">
+                                <p><a class="text-decoration-none text-reset" href="../html/a.html">Giới thiệu cửa
+                                        hàng</a></p>
+                                <p><a class="text-decoration-none text-reset" href="../html/a.html">Chính sách đổi
+                                        trả</a>
+                                </p>
+                                <p><a class="text-decoration-none text-reset" href="../html/a.html">Chính sách thanh
+                                        toán</a>
+                                </p>
+                                <p><a class="text-decoration-none text-reset" href="../html/a.html">Chính sách bảo
+                                        hành</a></p>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <p><B>CALISTYA RẤT HÂN HẠNH KHI ĐƯỢC PHỤC VỤ QUÝ KHÁCH HÀNG</B></p>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div>
+                            <h5 class="text-center">HỢP TÁC VÀ LIÊN KẾT</h5>
+                            <div class="d-flex justify-content-center">
+                                <a class="mr-2" href="https://www.facebook.com/"><img
+                                        src="../img/mypham/LienHe/facebook_icon.png" alt="Facebook"></a>
+                                <a class="mr-2" href="https://www.instagram.com/"><img
+                                        src="../img/mypham/LienHe/instagram.png" alt="Instagram"></a>
+                                <a href="https://www.amazon.com/"><img src="../img/mypham/LienHe/amazon.png"
+                                        alt="Amazon"></a>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="text-center">THANH TOÁN</h5>
+                            <div class="d-flex justify-content-center">
+                                <img class="px-2" src="../img/mypham/LienHe/master.png" alt="Master">
+                                <img class="px-2" src="../img/mypham/LienHe/paypal.png" alt="Paypal">
+                                <img class="px-2" src="../img/mypham/LienHe/visa.png" alt="Visa">
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+
+</html>
