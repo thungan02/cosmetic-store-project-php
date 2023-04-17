@@ -1,0 +1,68 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+.dangnhap {
+    border: 1px solid pink;
+    height: 300px;
+    width: 500px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+#left {
+    float: left;
+    width: 50%;
+}
+
+#left img {
+    padding: 20px;
+    height: 300px;
+    width: 90%;
+}
+
+#right {
+    float: left;
+    width: 50%;
+    margin-top: 15px;
+}
+
+#right img {
+    width: 25%;
+    margin: 10px 10px 0px 70px;
+    border-radius: 2px;
+}
+
+.form-group input {
+    border: 1px solid pink;
+    padding-top: -10px;
+}
+
+.row input::-webkit-input-placeholder {
+    color: brown;
+    padding-left: 20px;
+}
+
+.row h4 {
+    position: absolute;
+    font-size: 15px;
+    margin-left: -130px;
+    margin-top: -30px;
+}
+
+.nut button{
+    text-align: center;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 50px;
+}
+
+.row {
+    padding-top: 15px;
+    margin-left: 10px;
+}
